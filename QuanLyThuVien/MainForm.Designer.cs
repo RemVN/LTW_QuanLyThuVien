@@ -33,12 +33,12 @@ namespace QuanLyThuVien
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageLibrary = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPageSinhVien = new System.Windows.Forms.TabPage();
@@ -127,6 +127,10 @@ namespace QuanLyThuVien
             this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mãNguồnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.danhSáchThànhViênNhómToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenSinhVienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -148,10 +152,7 @@ namespace QuanLyThuVien
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phieuMuonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãNguồnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.danhSáchThànhViênNhómToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl.SuspendLayout();
             this.tabPageLibrary.SuspendLayout();
             this.tabPageSinhVien.SuspendLayout();
@@ -168,10 +169,11 @@ namespace QuanLyThuVien
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuMuon)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phieuMuonBindingSource)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -181,7 +183,7 @@ namespace QuanLyThuVien
             this.tabControl.Controls.Add(this.tabPageBook);
             this.tabControl.Controls.Add(this.tabPagePhieuMuon);
             this.tabControl.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl.Location = new System.Drawing.Point(12, 45);
+            this.tabControl.Location = new System.Drawing.Point(12, 27);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(1206, 629);
@@ -191,7 +193,7 @@ namespace QuanLyThuVien
             // 
             this.tabPageLibrary.BackColor = System.Drawing.SystemColors.Control;
             this.tabPageLibrary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPageLibrary.Controls.Add(this.richTextBox1);
+            this.tabPageLibrary.Controls.Add(this.pictureBox1);
             this.tabPageLibrary.Controls.Add(this.label5);
             this.tabPageLibrary.Controls.Add(this.label4);
             this.tabPageLibrary.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -202,35 +204,26 @@ namespace QuanLyThuVien
             this.tabPageLibrary.TabIndex = 0;
             this.tabPageLibrary.Text = "Thư viện";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.richTextBox1.Location = new System.Drawing.Point(13, 106);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(315, 265);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "141801549 - Trương Gia Khang";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label5.Location = new System.Drawing.Point(7, 70);
+            this.label5.Location = new System.Drawing.Point(509, 276);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(210, 32);
+            this.label5.Size = new System.Drawing.Size(300, 32);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Đồ án cuối kỳ";
+            this.label5.Text = "Đồ án cuối kỳ - LTW";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Consolas", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(6, 29);
+            this.label4.Location = new System.Drawing.Point(505, 220);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(322, 41);
+            this.label4.Size = new System.Drawing.Size(440, 56);
             this.label4.TabIndex = 0;
             this.label4.Text = "Quản Lý Thư Viện";
             // 
@@ -538,14 +531,14 @@ namespace QuanLyThuVien
             this.sdtDataGridViewTextBoxColumn,
             this.Edit});
             this.dataGridViewSinhVien.DataSource = this.sinhVienBindingSource;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewSinhVien.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewSinhVien.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewSinhVien.Location = new System.Drawing.Point(304, 10);
             this.dataGridViewSinhVien.Name = "dataGridViewSinhVien";
             this.dataGridViewSinhVien.ReadOnly = true;
@@ -875,8 +868,8 @@ namespace QuanLyThuVien
             this.dataGridViewBook.Name = "dataGridViewBook";
             this.dataGridViewBook.ReadOnly = true;
             this.dataGridViewBook.RowHeadersVisible = false;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBook.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBook.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewBook.Size = new System.Drawing.Size(890, 584);
             this.dataGridViewBook.TabIndex = 3;
             this.dataGridViewBook.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewBook_CellContentClick);
@@ -1109,8 +1102,8 @@ namespace QuanLyThuVien
             this.dataGridViewPhieuMuon.Name = "dataGridViewPhieuMuon";
             this.dataGridViewPhieuMuon.ReadOnly = true;
             this.dataGridViewPhieuMuon.RowHeadersVisible = false;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewPhieuMuon.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewPhieuMuon.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewPhieuMuon.Size = new System.Drawing.Size(890, 584);
             this.dataGridViewPhieuMuon.TabIndex = 6;
             // 
@@ -1164,6 +1157,39 @@ namespace QuanLyThuVien
             this.NgayTra.HeaderText = "Ngày trả";
             this.NgayTra.Name = "NgayTra";
             this.NgayTra.ReadOnly = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thôngTinToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1231, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // thôngTinToolStripMenuItem
+            // 
+            this.thôngTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mãNguồnToolStripMenuItem,
+            this.danhSáchThànhViênNhómToolStripMenuItem});
+            this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
+            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.thôngTinToolStripMenuItem.Text = "Thông tin";
+            // 
+            // mãNguồnToolStripMenuItem
+            // 
+            this.mãNguồnToolStripMenuItem.Name = "mãNguồnToolStripMenuItem";
+            this.mãNguồnToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.mãNguồnToolStripMenuItem.Text = "Mã nguồn";
+            this.mãNguồnToolStripMenuItem.Click += new System.EventHandler(this.MãNguồnToolStripMenuItem_Click);
+            // 
+            // danhSáchThànhViênNhómToolStripMenuItem
+            // 
+            this.danhSáchThànhViênNhómToolStripMenuItem.Name = "danhSáchThànhViênNhómToolStripMenuItem";
+            this.danhSáchThànhViênNhómToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.danhSáchThànhViênNhómToolStripMenuItem.Text = "Danh sách thành viên nhóm";
+            this.danhSáchThànhViênNhómToolStripMenuItem.Click += new System.EventHandler(this.DanhSáchThànhViênNhómToolStripMenuItem_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -1320,46 +1346,25 @@ namespace QuanLyThuVien
             // 
             this.phieuMuonBindingSource.DataSource = typeof(QuanLyThuVien.Muon.PhieuMuon);
             // 
-            // menuStrip1
+            // pictureBox1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thôngTinToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1231, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // thôngTinToolStripMenuItem
-            // 
-            this.thôngTinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mãNguồnToolStripMenuItem,
-            this.danhSáchThànhViênNhómToolStripMenuItem});
-            this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.thôngTinToolStripMenuItem.Text = "Thông tin";
-            // 
-            // mãNguồnToolStripMenuItem
-            // 
-            this.mãNguồnToolStripMenuItem.Name = "mãNguồnToolStripMenuItem";
-            this.mãNguồnToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.mãNguồnToolStripMenuItem.Text = "Mã nguồn";
-            this.mãNguồnToolStripMenuItem.Click += new System.EventHandler(this.MãNguồnToolStripMenuItem_Click);
-            // 
-            // danhSáchThànhViênNhómToolStripMenuItem
-            // 
-            this.danhSáchThànhViênNhómToolStripMenuItem.Name = "danhSáchThànhViênNhómToolStripMenuItem";
-            this.danhSáchThànhViênNhómToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.danhSáchThànhViênNhómToolStripMenuItem.Text = "Danh sách thành viên nhóm";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(239, 155);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 686);
+            this.ClientSize = new System.Drawing.Size(1231, 662);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1390,11 +1395,12 @@ namespace QuanLyThuVien
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuMuon)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sinhVienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phieuMuonBindingSource)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1506,7 +1512,6 @@ namespace QuanLyThuVien
         private DataGridViewButtonColumn dataGridViewButtonColumn4;
         private Label label5;
         private Label label4;
-        private RichTextBox richTextBox1;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private DataGridViewTextBoxColumn TenSinhVien;
@@ -1518,6 +1523,7 @@ namespace QuanLyThuVien
         private ToolStripMenuItem thôngTinToolStripMenuItem;
         private ToolStripMenuItem mãNguồnToolStripMenuItem;
         private ToolStripMenuItem danhSáchThànhViênNhómToolStripMenuItem;
+        private PictureBox pictureBox1;
 
         public TabControl TabControl { get => tabControl; set => tabControl = value; }
         public TabPage TabPageLibrary { get => tabPageLibrary; set => tabPageLibrary = value; }

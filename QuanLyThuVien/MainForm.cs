@@ -205,7 +205,12 @@ namespace QuanLyThuVien
 
         private void MãNguồnToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            System.Diagnostics.Process.Start("https://github.com/RemVN/LTW_QuanLyThuVien");
+        }
 
+        private void DanhSáchThànhViênNhómToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/RemVN/LTW_QuanLyThuVien/blob/master/README.md");
         }
     }
 }

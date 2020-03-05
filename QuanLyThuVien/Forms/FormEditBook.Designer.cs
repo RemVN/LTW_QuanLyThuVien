@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditBook));
             this.numGiaSach = new System.Windows.Forms.NumericUpDown();
             this.numNamXB = new System.Windows.Forms.NumericUpDown();
             this.comboTinhTrang = new System.Windows.Forms.ComboBox();
@@ -214,6 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textMaSo);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormEditBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Sửa sách";
